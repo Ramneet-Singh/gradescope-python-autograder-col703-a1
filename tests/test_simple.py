@@ -8,10 +8,10 @@ class TestComplex(unittest.TestCase):
         pass
 
     @weight(1)
-    @visibility('after_published')
+    #@visibility('after_published')
     @number("1.1")
     def test_and_intro(self):
-        """Check the handling of the and introduction rule."""
+        """Unit test - and introduction rule."""
         proofFilePath = "/autograder/source/inputProofFiles/unit_and_intro.txt"
         output = checkProof(proofFilePath)
         self.assertEqual(output, "correct")
