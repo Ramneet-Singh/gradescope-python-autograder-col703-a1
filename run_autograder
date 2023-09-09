@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Set up autograder files
+
+cd /autograder/submission
+
+if [ "$(ls -d 20* 1> /dev/null 2>&1)" ]; then
+    echo "[ERROR] Required Folder Does Not Exist!"
+    exit 1
+fi
+
+cd 20*
+
+find . -name '*.py' -exec cp -pv --parents '{}' '/autograder/source/' ';'
+
+cd /autograder/source
+
+python3 run_tests.py
