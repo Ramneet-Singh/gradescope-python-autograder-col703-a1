@@ -8,7 +8,6 @@ class TestComplex(unittest.TestCase):
         pass
 
     @weight(1)
-    #@visibility('after_published')
     @number("1.1")
     def test_and_intro(self):
         """Unit test - and introduction rule."""
