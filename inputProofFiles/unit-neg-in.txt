@@ -1,0 +1,6 @@
+(a -> \bot) |- (! a)
+
+[assumption] a
+[premise] (a -> \bot)
+[mp 3, 4] \bot
+[neg-in 3-5] (! a)

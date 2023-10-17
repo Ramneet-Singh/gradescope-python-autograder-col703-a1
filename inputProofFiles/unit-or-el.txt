@@ -1,0 +1,12 @@
+(p \/ q) |- (((p -> x) /\ (q -> x)) -> x)
+
+[premise] (p \/ q)
+[assumption] ((p -> x) /\ (q -> x))
+[and-e1 4] (p -> x)
+[and-e2 4] (q -> x)
+[assumption] p
+[mp 7, 5] x
+[assumption] q
+[mp 9, 6] x
+[or-el 3, 7-8, 9-10] x
+[impl-in 4-11] (((p -> x) /\ (q -> x)) -> x)

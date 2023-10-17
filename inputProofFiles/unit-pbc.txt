@@ -1,0 +1,10 @@
+|- (a \/ (! a))
+
+[assumption] (! (a \/ (! a)))
+[assumption] a
+[or-in1 4] (a \/ (! a))
+[neg-el 5, 3] \bot
+[neg-in 4-6] (! a)
+[or-in2 7] (a \/ (! a))
+[neg-el 8, 3] \bot
+[pbc 3-9] (a \/ (! a))

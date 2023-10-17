@@ -1,0 +1,5 @@
+\bot |- (\bot /\ x)
+
+[premise] \bot
+[bot-el 3] x
+[and-in 3, 4] (\bot /\ x)

@@ -1,0 +1,5 @@
+|- (p -> p)
+
+[assumption] p
+[copy 3] p
+[impl-in 3-4] (p -> p)

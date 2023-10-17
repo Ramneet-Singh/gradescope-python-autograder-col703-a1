@@ -1,0 +1,4 @@
+q, p |- (x \/ p)
+
+[premise] p
+[or-in2 3] (x \/ p)

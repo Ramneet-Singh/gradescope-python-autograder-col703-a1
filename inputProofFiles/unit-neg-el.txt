@@ -1,0 +1,8 @@
+(a /\ (! a)), q |- r
+
+[premise] q
+[premise] (a /\ (! a))
+[and-e1 4] a
+[and-e2 4] (! a)
+[neg-el 5, 6] \bot
+[bot-el 7] r
