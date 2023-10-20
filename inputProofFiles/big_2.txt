@@ -15,7 +15,7 @@
 [bot-el 14] x5
 [or-el 6, 7-10, 11-15] x5
 [assumption] (x5 /\ x6)
-[and-e1 8] x5
+[and-e1 17] x5
 [or-el 5, 6-16, 17-18] x5
 [impl-in 4-19] ((! (! (! x3))) -> x5)
 [impl-in 3-20] ((! x1) -> ((! (! (! x3))) -> x5))
