@@ -58,3 +58,4 @@ docs/_build/
 target/
 
 .student-subs/
+.ssh-keys/
