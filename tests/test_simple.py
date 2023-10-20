@@ -138,14 +138,14 @@ class TestComplex(unittest.TestCase):
     @weight(0.2)
     @number("1.2.1")
     def test_scope_incorrect(self):
-        """Incorrect Proof Test- Scope Issue"""
+        """Incorrect Proof Test - Scope Issue"""
         proofFilePath = "/autograder/source/inputProofFiles/scope_incorrect_1.txt"
         output = checkProof(proofFilePath)
         self.assertEqual(output, "incorrect")
 
     @weight(0.2)
     @number("1.2.2")
-    def test_scope_incorrect(self):
+    def test_incorrect(self):
         """Incorrect Proof Test"""
         proofFilePath = "/autograder/source/inputProofFiles/incorrect_1.txt"
         output = checkProof(proofFilePath)
@@ -161,7 +161,7 @@ class TestComplex(unittest.TestCase):
 
     @weight(0.4)
     @number("1.3.2")
-    def test_scope_incorrect(self):
+    def test_big_2(self):
         """Big Test 2"""
         proofFilePath = "/autograder/source/inputProofFiles/big_2.txt"
         output = checkProof(proofFilePath)
