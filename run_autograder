@@ -15,4 +15,7 @@ find . -name '*.py' -exec cp -pv --parents '{}' '/autograder/source/' ';'
 
 cd /autograder/source
 
+rm -f /autograder/results/results.json
+mkdir -p /autograder/results
+
 python3 run_tests.py
